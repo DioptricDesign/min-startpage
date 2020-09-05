@@ -1,58 +1,108 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,
-      shrink-to-fit=no">
-    <link rel="stylesheet" href="min.css">
-    <title>Startpage....</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+                    shrink-to-fit=no">
+        <link rel="stylesheet" href="min.css">
+        <title>Home</title>
   </head>
   <body>
-    <div class="container">
-
-      <div class="bookmarks">
-       <!-- Linux -->
-        <div class="square">
-        <div class="square-header">Linux</div>
-        <a href="https://forum.xfce.org/" target="_blank">Xfce Forums</a>
-        <a href="https://discussion.fedoraproject.org/" target="_blank">Fedora Discussion</a>
-	      <a href="http://forums.debian.net/" target="_blank">Debian Forums </a>
-	      <a href="https://ubuntuforums.org/" target="_blank">Ubuntu Forums</a>
-	      <a href="https://omgubuntu.co.uk/" target="_blank">Omg Ubuntu</a>
-	      <a href="https://itsfoss.com/" target="_blank">Its Foss</a>
-	      <a href="https://fedoramagazine.org/" target="_blank">Fedora Magazine</a>
-        <a href="https://opensource.com/" target="_blank">Open Source</a>
-	      <a href="https://feedly.com/i/latest" target="_blank">Linux Feed</a>
-        </div>
-
-        <!-- TF2 -->
-         <div class="square">
-         <div class="square-header">TF2</div>
-         <a href="http://huds.tf/" target="_blank">Hud</a>
-         <a href="https://marketplace.tf/" target="_blank">Marketplace</a>
-         <a href="https://mannco.trade/" target="_blank">Mannco</a>
-         <a href="https://scrap.tf/" target="_blank">Scrap</a>
-         <a href="https://backpack.tf/" target="_blank">Backpack</a>
-         <a href="http://tf2finance.com/" target="_blank">Finance</a>
-         </div>
-
-        <!-- Web -->
-        <div class="square">
-        <div class="square-header">Web</div>
-        <a href="https://computerhope.com/htmcolor.htm" target="_blank">Htmlcolors</a>
-        <a href="https://colorhexa.com/" target="_blank">Colorhexa</a>
-        <a href="https://mycolor.space/" target="_blank">My Color</a>
-        <a href="https://coolors.co/" target="_blank">Coolors</a>
-        <a href="http://colormind.io/" target ="_blank">Color Mind</a>
-        <a href="https://wildtype.design/" target="_blank">Wildtype</a>
-        <a href="http://dafont.com/" target="_blank">Dafont</a>
-        <a href="https://onextrapixel.com/" target="_blank">One Extra Pixel</a>
-        <a href="https://www.hongkiat.com/blog/" target="_blank">Hongkiat</a>
-        <a href="https://line25.com/" target="_blank">Line 25</a>
-        <a href="http://explosm.net/" target="_blank">Explosm</a>
-        <a href="http://youtube.com/" target="_blank">Youtube</a>
-        </div>
+      <div class="container">
+                <box>
+                    <pre>
+ _   _                      
+| | | | ___  _ __ ___   ___ 
+| |_| |/ _ \| '_ ` _ \ / _ \
+|  _  | (_) | | | | | |  __/
+|_| |_|\___/|_| |_| |_|\___|
+                    </pre>
+                        <dt id="demo"></dt>
+                        <script>
+                         var d = new Date().toLocaleString();
+                         document.getElementById("demo").innerHTML = d;
+                        </script>
+                        <quote>
+                            <div id="messages001"> </div>
+                            <script>
+                             var array1 = ["The perfect is the enemy of the good. - Voltaire",
+                                           "Yard By Yard Life Is Hard, Inch By Inch It’s A Cinch! - Unknown",
+                                           "Brush it off. - Paul",
+                                           "Perfect is good done is better. - Unknown",
+                                           "Release early. Release often. - Eric S. Raymond",
+                                           "Worries are prayers for things you dont want.",
+                                           "If You’re Going Through Hell, Keep Going. - Unknown",
+                                           "Style is the residue of failure. - Unknown",
+                                           "There's no mistake so big you cant make it worse",
+                                           "We should contol the programs we use and not vice versa. - Richard Stallman",
+                                           "Stay Loose, Stay fast. - Ryan Benjamin"];
+                             function rnd() {
+                                 var ranmes = Math.floor(Math.random()*array1.length);
+                                 document.getElementById("messages001").innerHTML = array1[ranmes];innerHTML
+                             }
+                             onload = function () {
+                                 rnd();
+                             }
+                            </script>
+                        </quote>
+                </box>
+          <div class="search-block">
+              <form id="search-form" action="https://duckduckgo.com/" method="get">
+                  <input type="text" name="q" id="search" autocomplete="off" style="text-align: center;margin: 5px;background: #000000a8;color:var(--color15);border-radius: 5px;border-style: none;width:400px;" placeholder="DuckDuckGo"/></form>
+          </div>
+          <div class="bookmarks">
+              <!-- Software -->
+              <div class="square">
+                  <div class="square-header">Software</div>
+                  <a href="https://wiki.archlinux.org"target="_blank">Arch Wiki</a>
+	                <a href="https://aur.archlinux.org/" target="_blank">Arch User Repository</a>
+                  <a href="https://distrowatch.com/"target="_blank">Distro Watch</a>
+	                <a href="https://www.f-droid.org/" target="_blank">F-droid</a>
+	                <a href="https://github.com/" target="_blank">Git Hub</a>
+	                <a href="https://linuxjourney.com/" target="_blank">Linux Journey </a>
+                  <a href="http://www.qtile.org/" target="_blank">Qtile</a>
+	                <a href="https://www.spacemacs.org" target="_blank">Spacemacs</a>
+              </div>
+              <!-- Entertainment -->
+              <div class="square">
+                  <div class="square-header">Entertainment</div>
+                  <a href="https://www.twitch.tv/" target="_blank">Twitch</a>
+                  <a href="http://youtube.com/" target="_blank">Youtube</a>
+                  <a href="https://archive.org/" target="_blank">Archive</a>
+                  <a href="https://soundcloud.com/" target="_blank">Sound Cloud </a>
+                  <a href="https://lbry.com/" target="_blank">LBRY</a>
+              </div>
+              <!-- Social Media -->
+              <div class="square">
+                  <div class="square-header">Social Media</div>
+                  <a href="https://www.dioptricdesign.com/" target="_blank">Dioptric Design</a>
+                  <a href="https://www.deviantart.com/dioptricdesign" target="_blank">Deviant Art</a>
+                  <a href="https://twitter.com/dioptric_design" target="_blank">Twitter</a>
+                  <a href="https://dioptric-design.tumblr.com/" target="_blank">Tumblr</a>
+                  <a href="https://www.instagram.com/dioptric_design/" target="_blank">Instagram</a>
+                  <a href="https://old.reddit.com/" target="_blank">Reddit</a>
+              </div>
+              <!-- Gaming -->
+              <div class="square">
+                  <div class="square-header">Gaming</div>
+                  <a href="https://lutris.net/" target="_blank">Lutris</a>
+                  <a href="https://store.steampowered.com/" target="_blank">Steam</a>
+                  <a href="https://www.protondb.com/" target="_blank">Proton DB</a>
+                  <a href="https://howlongtobeat.com/" target="_blank">How Long to Beat</a>
+                  <a href="https://www.ign.com/wikis" target="_blank">IGN Wikis</a>
+                  <a href="https://www.humblebundle.com/" target="_blank">Humble Bundle</a>
+                  <a href="https://www.metacritic.com/game" target="_blank">Metacritic Games</a>
+              </div>
+              <!-- Web Interfaces -->
+              <div class="square">
+                  <div class="square-header">Web Interfaces</div>
+                  <a href="http://192.168.0.50/index.php/login" target="_blank">Next Cloud</a>
+                  <a href="http://192.168.0.50:8096" target="_blank">Jelly Fin</a>
+                  <a href="http://192.168.0.1" target="_blank">Modem</a>
+                  <a href="http://192.168.1.1" target="_blank">Router</a>
+                  <a href="http://localhost:631/printers/" target"_blank">Printers</a>
+              </div>
+          </div>
       </div>
-    </div>
   </body>
 </html>

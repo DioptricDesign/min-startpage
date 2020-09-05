@@ -1,13 +1,20 @@
-html{
-  background-color: #272b35;
-}
-
+/* Import the CSS file.
+   Colors for pywal*/
+@import url('file:///home/probe/.cache/wal/colors.css');
 body {
   margin: 0px;
   user-select: none;
-  -moz-user-select: none;
+  background-size: cover;
+  background-color: var(--color0);
+  background-image: var(--wallpaper)
 }
-
+pre{
+  color: var(--color15);
+  font-weight: bold;
+}
+datetime{
+  font-size: 16px;
+}
 .container {
   width: 100%;
   height: 100vh;
@@ -16,43 +23,63 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
 .bookmarks {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 44%;
+  width: 85%;
+  height: 50%;
 }
-
 .square {
   padding: 0.4em;
-  font-family: Ubuntu Mono;
-  font-size: 1rem;
+  font-family: Sans;
+  font-size: 1.1rem;
+  font-weight: 400;
   width: 100%;
-  height: 20em;
+  height: max-content;
   margin: 0em .5em;
   text-align: center;
+  background-color:#000000a8;
+  border-radius: 15px;
 }
-
 .square-header {
+  font-family: Sans;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--color5);
   margin: 0em 0em .35em 0em;
+  font-style: italic;
 }
-
 .square-body {
   vertical-align: top;
   align-items: center;
 }
-
 a {
   text-decoration: none;
-  color: #8c8c8b;
+  color: var(--color4);
   display: block;
   margin: .5em 0em;
 }
+box {
+    text-decoration: none;
+    color: var(--color15);
+    display: block;
+    background-color:#000000a8;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    font-family: Sans;
+}
+quote {
+    font-family:Serif;
+    font-weight:normal;
+    font-style:italic;
+    color: var(--color15);
+    padding: 1px;
+}
 
 a:hover {
-  color: #fff;
+  color:var(--color7);
 }
+     | file:///home/user/Documents/Start%20Page/min-startpage/min.html */
+
